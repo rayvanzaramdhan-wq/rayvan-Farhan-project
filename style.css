@@ -1,0 +1,919 @@
+/*Box Size--------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f5;
+  color: #000000;
+}
+
+.header-pilar {
+  width: 100%;
+  margin-top: 200px;  
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-pilar2 {
+  width: 100%;
+  margin-top: 60px;  
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-pilar3 {
+  width: 100%;
+  margin-top: 40px;  
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+/*Header-----------------------------------------------------------------------------*/
+/*Navigasi---------------------------------------------------------------------------*/
+.navbar {
+  background-color: #fafafb;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between ; 
+  gap: 30px;
+  align-items: center;
+  padding: 20px 60px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; 
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: 0.6s;
+}
+
+.nav-links a:hover,
+.nav-links a.aktif {
+  color: #000000;
+  border-bottom: 2px solid #38bdf8;
+}
+/*navigasi helper----------------------------------*/
+
+.halaman {
+    display: none;
+}
+
+.halaman:target,
+#beranda {
+    display: block;
+}
+
+main:has(.halaman:target) #beranda:not(:target) {
+    display: none;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 50px;   
+  width: auto;    
+  display: block;
+}
+/*Main Konten-------------------------------------------------------------------------*/
+.konten {
+  max-width: 100%;
+  margin: 10px auto 40px auto;
+  margin-bottom: 40px auto;
+  padding: 10px 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #030303;       
+  text-align: center;
+}
+
+.foto-tengah-custom {
+  display: block;          
+  margin: 0 auto;         
+  width: 800px;          
+  height: 500px;          
+  object-fit: cover;       
+  border-radius: 16px;    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #ffffff;
+}
+
+.border_container {
+background-image: url('https://uploads.onecompiler.io/44zznr3n8/1794837738066/teman.jpg');
+background-size: cover;
+background-blend-mode: overlay;
+background-color: rgba(10, 0, 0, 0.5);
+max-width: 1500px;
+margin: 40px auto;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+color:white;
+min-height: 600px;
+}
+.border_container img { 
+  max-width: 100%;       
+  height: auto;         
+  border-radius: 8px;  
+  display: block;
+  margin: 15px auto;
+}
+
+.bio_container {
+  max-width: 100% ;
+  padding: 30px;
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-color: rgba(173, 13, 13, 0.734);
+  color:rgb(252, 250, 250);
+  min-height: 300px;
+  align-items: center;
+  margin: 0 auto;
+  border:2px solid #000000;
+}
+
+.bio_container2 {
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  background-color: rgba(253, 253, 253, 0.734);
+  color:rgb(0, 0, 0);
+  min-height: 300px;
+  margin: 40px auto;
+  border:2px solid #ffffff;
+}
+
+.main_container {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: #f4f4f5;
+  color: #030303;       
+  text-align: center;
+  border:2px solid #ffffff;
+}
+
+.border_container2 {
+background-color: rgba(226, 226, 226, 0.5);
+max-width: 1500px;
+margin: 40px auto 30px auto;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+color:rgb(0, 0, 0);
+min-height: 600px;
+}
+
+.ekskul-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 20px;
+  border-radius: 16px;
+  border:2px solid #ffffff;
+}
+
+.section-full {
+  width: 100%;
+}
+
+.section-margin-top {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.section-profil-top {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.fokus-label-custom {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pilar-wrapper-col {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/*external content tambahan buat eskul*/
+.ekskul-banner-custom {
+  background-image: url('https://uploads.onecompiler.io/44zznr3n8/1795269156994/WhatsApp%20Image%202026-11-21%20at%2020.52.10.jpeg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 550px;
+  padding: 40px ;
+}
+
+.ekskul-sub-custom {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: #e2e8f0;
+}
+
+.ekskul-h1-custom {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  color: #ffffff;
+}
+
+.ekskul-p-custom {
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+}
+
+.ekskul-btn-custom {
+  background-color: #c084fc;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+/*Profile------------------------------------------------------------------------------------*/
+.kotak-kartu {
+  background-color: #dcdcdc; 
+  width: 100%;
+  max-width: none;         
+  margin: 0 ;        
+  padding: 60px 0px  ;            
+  border-radius: 0px;     
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+}
+
+/*flexbox--------------------------------------------------------------------------------*/
+/*versi Konten kiri*/
+.content-flex {
+  display: flex;
+  align-items: center; 
+  gap: 30px;           
+  margin-top: 20px;
+}
+
+.content-flex img {
+  width: 400px;        
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.content-flex p {
+  text-align: left;
+  line-height: 1.6;
+}
+/*versi Konten kanan*/
+.content-flex.kanan {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; 
+  gap: 30px;         
+  margin-top: 20px;
+}
+
+.content-flex.kanan img {
+  width: 400px;        
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.content-flex.kanan p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+
+/*versi kanan tulisan____________________________________________________________________________*/
+.text-kanan h3 {
+  font-size: 1.1rem;
+  color: #0284c7;      
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.text-kanan p:first-child, 
+.text-kanan h1 {
+  text-align: center; 
+}
+
+.text-kanan h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.text-kanan p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+/* Versi Kiri tulisan _____________________________*/
+.text-kiri h3 {
+  font-size: 1.1rem;
+  color: #0284c7;      
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.text-kiri p:first-child, 
+.text-kiri h1 {
+  text-align: left; 
+}
+
+.text-kiri h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.text-kiri p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+.arah-pendidikan-flex {
+  width: 100%;
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 0 40px;
+}
+
+.visi-wrapper {
+  flex: 1;
+}
+
+.visi-title-custom {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #111;
+  font-family: 'Lora', serif;
+}
+
+.visi-desc-custom {
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: #111;
+  font-family: 'Lora', serif;
+}
+
+.misi-wrapper {
+  flex: 1;
+  text-align: left;
+}
+
+.misi-title-custom {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #111;
+  font-family: 'Lora', serif;
+}
+
+.misi-list-custom {
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #333;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.misi-list-custom li {
+  margin-bottom: 10px;
+}
+
+/*card-----------------------------------------------------------------------------------------------*/
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;         
+  flex-wrap: wrap;    
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #d9dfe3;
+  border-radius: 16px;      
+  padding: 30px;
+  width: 265px;             
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  text-align: left;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.46);
+}
+
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+.card-icon {
+  background-color: #c0c0c2; 
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #111;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #000204;
+}
+
+/*CARD PUNYA KARAKTER_________________________________*/
+.card-image-box {
+  background-color: #ffffff;
+  border-radius: 16px;      
+  width: 350px;             
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  overflow: hidden; 
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-box:hover {
+  transform: translateY(-5px); 
+}
+
+.card-image-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-image-content {
+  padding: 25px;
+}
+
+.card-image-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #111;
+  font-weight: 600;
+  font-family: 'Lora', serif;
+}
+
+.card-image-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/*external aja keknya*/
+.card-alumni-custom {
+  width: 350px;
+  background-color: #d2c5c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.card-alumni-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.card-alumni-author {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #474545;
+}
+
+/* card buat eskul (yang kotak kotak)*/
+.ekskul-list-item {
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: justify;
+  gap: 20px;
+  padding: 25px;
+  text-align: justify;
+  transition: transform 0.3s ease;
+  border:2px solid #cbd5e1;
+}
+
+.ekskul-list-item:hover {
+  transform: translateY(-3px);
+}
+
+.ekskul-list-item img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.ekskul-list-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+  color: #000000;
+  font-family: 'Lora', serif;
+}
+
+.ekskul-list-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #5d5d5d;
+}
+/*osis dll_______________________________________*/
+
+
+/*Footer----------------------------------------------------------------------*/
+.cta-section {
+  max-width: 1300px;
+  width: 90%;
+  margin: 80px auto 40px auto;
+  padding: 40px 60px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cta-text h2 {
+  font-size: 2.2rem;
+  font-family: 'Lora', serif;
+  color: #111;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.cta-text p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: left;
+}
+
+.cta-btn {
+  background-color: #18121e;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.cta-btn:hover {
+  background-color: #a9089c;
+  color: #000;
+}
+
+/* --- Bagian Footer Sekolah --- */
+.footer-sekolah {
+  background-color: #ededed;
+  width: 100%;
+  padding: 60px 40px 30px 40px;
+  border-top: 1px solid #d4d4d4;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col-kiri {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.footer-line {
+  width: 50px;
+  height: 3px;
+  background-color: #bf0909;
+  margin-bottom: 20px;
+}
+
+.footer-col-kiri h2 {
+  font-size: 1.8rem;
+  font-family: 'Lora', serif;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.footer-col-kiri p {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+.footer-col-kanan {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.footer-col-kanan h4 {
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #5b00f9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.footer-col-kanan p, 
+.footer-col-kanan a {
+  font-size: 0.9rem;
+  color: #000000;
+  line-height: 1.6;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.footer-col-kanan a:hover {
+  color: #070bff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: left;
+}
+
+/* footer buat sosial media______________________________________________________*/
+.sosial-media {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.sosial-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #7a787a; 
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.sosial-media a:hover {
+    background-color: #ef09eb; 
+}
+
+
+/*Responsive----------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .ekskul-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ekskul-list-item img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  body {
+    font-size: 14px;
+    overflow-x: hidden; 
+  }
+
+  .navbar {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+  }
+
+  .konten {
+    padding: 5px 10px;
+  }
+
+  .border_container, .border_container2 {
+    padding: 20px 15px;
+    min-height: auto;
+    margin: 15px auto;
+  }
+
+  .foto-tengah-custom {
+    width: 100% !important;
+    height: 220px !important; 
+    max-width: 100%;
+  }
+
+  .content-flex, .content-flex.kanan {
+    flex-direction: column !important;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .content-flex img, .content-flex.kanan img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .card-container {
+    gap: 15px;
+    padding: 0 5px;
+  }
+
+  .card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .card-image-box {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ekskul-list-item {
+    flex-direction: column !important;
+    align-items: stretch;
+    padding: 15px;
+  }
+
+  .ekskul-list-item img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  .cta-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+    width: 95% !important;
+    margin: 30px auto;
+  }
+
+  .cta-text h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .cta-text p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 12px;
+  }
+
+  .footer-sekolah {
+    padding: 30px 15px 15px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-col-kiri, .footer-col-kanan {
+    min-width: 100%;
+    text-align: left !important;
+  }
+
+  .footer-line {
+    margin: 0 0 15px 0 !important; 
+  }
+
+  .footer-col-kiri p, .footer-col-kanan p, .footer-col-kanan a, .footer-col-kanan h4 {
+    text-align: left !important;
+  }
+
+  .sosial-media {
+    justify-content: flex-start !important; 
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: left !important;
+    gap: 10px;
+  }
+}
